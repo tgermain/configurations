@@ -1,0 +1,23 @@
+{
+	"installed_packages":
+	[
+		"Bison",
+		"BracketHighlighter",
+		"C++ Snippets",
+		"Color Highlighter",
+		"Conky.tmLanguage",
+		"Dotfiles Syntax Highlighting",
+		"Flex",
+		"Git",
+		"GitGutter",
+		"Makefile Improved",
+		"Package Control",
+		"Prolog",
+		"Python Auto-Complete",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"Theme - Phoenix",
+		"Wrap Plus"
+	]
+}

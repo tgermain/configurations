@@ -1,0 +1,17 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+	"font_face": "inconsolata",
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Vintage",
+		"Makefile",
+		"Color Highlighter",
+		"Prolog"
+	],
+	"phoenix_color_orange": true,
+	"phoenix_dirty_bottom_bar": true,
+	"phoenix_dirty_bottom_bar_red": true,
+	"phoenix_solid_current_tab": true,
+	"theme": "Phoenix Dark.sublime-theme"
+}
