@@ -4,9 +4,8 @@
 	"font_size": 11,
 	"ignored_packages":
 	[
-		"Git",
-		"Color Highlighter",
 		"Vintage",
+		"Git",
 		"Makefile",
 		"Color Highlighter",
 		"Prolog"
