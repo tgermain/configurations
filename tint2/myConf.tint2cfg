@@ -8,7 +8,7 @@
 # ID 1
 rounded = 1
 border_width = 1
-background_color = #0A0A0A 53
+background_color = #0A0A0A 52
 border_color = #656565 40
 
 # ID 2
@@ -45,7 +45,7 @@ autohide = 1
 autohide_show_timeout = 0.1
 autohide_hide_timeout = 1
 autohide_height = 1
-strut_policy = follow_size
+strut_policy = minimum
 
 # Taskbar
 taskbar_mode = multi_desktop
