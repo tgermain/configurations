@@ -117,12 +117,12 @@ _1RIGHT="%{$fg_bold[grey]%}[%*]%{$reset_color%} "
 
 bureau_precmd () {
   _1SPACES=`get_space $_1LEFT $_1RIGHT`
-  echo
+  print 
+  print -rP "$_1LEFT$_1SPACES$_1RIGHT"
 }
 
 setopt prompt_subst
-PROMPT='$_1LEFT$_1SPACES$_1RIGHT
-%{$fg_bold[grey]%}└>%{$reset_color%}$_LIBERTY '
+PROMPT='%{$fg_bold[grey]%}└>%{$reset_color%}$_LIBERTY'
 RPROMPT='$RETURN_CODE $(nvm_prompt_info) $(bureau_git_prompt)'
 
 autoload -U add-zsh-hook
