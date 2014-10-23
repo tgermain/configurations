@@ -1,5 +1,6 @@
 [global_config]
   enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  suppress_multiple_term_dialog = True
   inactive_color_offset = 0.59
 [keybindings]
 [profiles]
@@ -14,6 +15,7 @@
     foreground_color = "#ffffff"
     show_titlebar = False
     font = Inconsolata Medium 11
+    background_color = "#0f0f0f"
     scrollback_infinite = True
   [[tim]]
     palette = "#000000:#e52222:#a6e32d:#fc951e:#c48dff:#fa2573:#67d9f0:#f2f2f2:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
