@@ -113,7 +113,7 @@ get_space () {
 }
 
 _1LEFT="%{$fg_bold[grey]%}┌%{$reset_color%}$_USERNAME$_PATH"
-_1RIGHT="%{$fg_bold[grey]%}[%*]%{$reset_color%} "
+_1RIGHT="$(virtualenv_prompt_info) %{$fg_bold[grey]%}[%*]%{$reset_color%} "
 
 bureau_precmd () {
   _1SPACES=`get_space $_1LEFT $_1RIGHT`
