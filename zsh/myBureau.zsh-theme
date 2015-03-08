@@ -86,14 +86,14 @@ echo $_result
 RETURN_CODE="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 _PATH="%{$fg_bold[grey]%}:%{$FG[202]%}%~%{$reset_color%}"
 
-if [[ "%#" == "#" ]]; then
+if [[ $EUID -eq 0 ]]; then
   _USERNAME="%{$fg_bold[red]%}%n"
   _LIBERTY="%{$fg[red]%}#"
 else
-  _USERNAME="%{$FG[057]%}%n"
+  _USERNAME="%{$fg[blue]%}%n"
   _LIBERTY="%{$fg[green]%}$"
 fi
-_USERNAME="$_USERNAME%{$reset_color%}%{$fg_bold[grey]%}@%{$reset_color%}%{$FG[068]%}%m%{$reset_color%}"
+_USERNAME="$_USERNAME%{$reset_color%}@%{$FG[068]%}%m%{$reset_color%}"
 _LIBERTY="$_LIBERTY%{$reset_color%}"
 
 
@@ -112,7 +112,7 @@ get_space () {
   echo $SPACES
 }
 
-_1LEFT="%{$fg_bold[grey]%}┌%{$reset_color%}$_USERNAME$_PATH"
+_1LEFT="┌$_USERNAME$_PATH"
 _1RIGHT="$(virtualenv_prompt_info) %{$fg_bold[grey]%}[%*]%{$reset_color%} "
 
 bureau_precmd () {
@@ -122,7 +122,7 @@ bureau_precmd () {
 }
 
 setopt prompt_subst
-PROMPT='%{$fg_bold[grey]%}└>%{$reset_color%}$_LIBERTY'
+PROMPT='└>$_LIBERTY'
 RPROMPT='$RETURN_CODE $(nvm_prompt_info) $(bureau_git_prompt)'
 
 autoload -U add-zsh-hook
