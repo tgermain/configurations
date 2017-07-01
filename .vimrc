@@ -14,7 +14,6 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 " Color themes
-Plugin 'chriskempson/base16-vim'
 Bundle 'klen/python-mode'
 "Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdtree'
@@ -29,6 +28,7 @@ Bundle 'edkolev/tmuxline.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rodjek/vim-puppet.git'
 Plugin 'godlygeek/tabular.git'
+Plugin 'tomasr/molokai'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
